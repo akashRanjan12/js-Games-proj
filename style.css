@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-position: center;
+  background-image: radial-gradient(
+      circle at 67% 83%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 1%,
+      transparent 1%,
+      transparent 5%,
+      transparent 5%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 24% 80%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 27%,
+      transparent 27%,
+      transparent 63%,
+      transparent 63%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 23% 5%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 26%,
+      transparent 26%,
+      transparent 82%,
+      transparent 82%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 21% 11%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 35%,
+      transparent 35%,
+      transparent 45%,
+      transparent 45%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 10% 11%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 21%,
+      transparent 21%,
+      transparent 81%,
+      transparent 81%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 19% 61%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 20%,
+      transparent 20%,
+      transparent 61%,
+      transparent 61%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 13% 77%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 63%,
+      transparent 63%,
+      transparent 72%,
+      transparent 72%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 30% 93%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 33%,
+      transparent 33%,
+      transparent 82%,
+      transparent 82%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(22, 176, 207), rgb(103, 7, 215));
+  /* background-color: rgb(214, 92, 255, 0.5); */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container {
+  padding-top: 20px;
+  height: 70vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2vmin;
+}
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 10%;
+  border: 1px solid blue;
+  font-size: 8vmin;
+  /* color: red; */
+  background-color: white;
+}
+.color {
+  color: green;
+}
+.color1 {
+  color: yellow;
+}
+#new-btn,
+.reset {
+  padding: 10px;
+  font-size: 1.1em;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(0, 1, 90);
+  box-shadow: 6px 6px 10px black;
+  color: white;
+  border: nane;
+}
+#new-btn:hover,
+.reset:active {
+  padding: 8px;
+  color: orangered;
+}
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#msg {
+  font-size: 40px;
+  color: rgb(17, 87, 0);
+}
+.hide {
+  display: none;
+}
