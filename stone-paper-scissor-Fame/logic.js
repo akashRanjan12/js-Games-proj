@@ -9,6 +9,9 @@ function getmove() {
   }
   return compMove;
 }
+var winEl = document.querySelector("#win-score");
+var losetEl = document.querySelector("#losses-score");
+var tieEl = document.querySelector("#ties-score");
 
 const score = {
   wins: 0,
@@ -55,18 +58,18 @@ function checkmove(move) {
 
   var storeRes = document.querySelector("#store-res");
   storeRes.innerHTML = `You get ${getcompmove}: ${result}`;
-  var winEl = document.querySelector("#win-score");
   winEl.innerHTML = score.wins;
-  var losetEl = document.querySelector("#losses-score");
   losetEl.innerHTML = score.losses;
-  var tieEl = document.querySelector("#ties-score");
   tieEl.innerHTML = score.ties;
 }
-function reset() {
-  var winEl = document.querySelector("#win-score");
-  winEl.innerHTML = "0";
-  var losetEl = document.querySelector("#losses-score");
-  losetEl.innerHTML = "0";
-  var tieEl = document.querySelector("#ties-score");
-  tieEl.innerHTML = "0";
+
+function resetscore() {
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+
+  winEl.innerHTML = score.wins;
+  losetEl.innerHTML = score.losses;
+  tieEl.innerHTML = score.ties;
+  document.querySelector("#store-res").innerHTML = "Pick your Move";
 }
